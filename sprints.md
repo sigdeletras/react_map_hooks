@@ -56,3 +56,16 @@ Crea una nueva carpeta .vscode y dentro e archivo setting.json con la configurac
 - components
 - services
 
+## service
+
+const APIURL = 'http://www.cartociudad.es/CartoGeocoder/Geocode?address=calle%20pons%201%20barcelona%20barcelona&max_results=50';
+
+  // const [geocoders, getGeocoders] = useState([]);
+
+  // useEffect(() => {
+  //   fetch(APIURL)
+  //     .then((res) => res.json)
+  //     .then((response) => {
+  //       console.log(response);
+  //     });
+  // });
