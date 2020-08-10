@@ -30,6 +30,10 @@ Seguidamete inicialimos eslint para generar el archivo de configuración.
 ```
 npx eslint --init
 npx eslint .
+npx eslint . --fix
 ```
 
 - Instalado el complemento ESLint
+
+
+Para activar la opción de fix onsave https://www.digitalocean.com/community/tutorials/workflow-auto-eslinting#:~:text=If%20you%20have%20the%20ESLint,fixable%20Problems%E2%80%9D%20and%20press%20enter.&text=Beautiful!
