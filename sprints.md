@@ -33,7 +33,26 @@ npx eslint .
 npx eslint . --fix
 ```
 
+Se ha creado un script dentro de package.json para ejecutar 
+npx eslint . --fix
+
 - Instalado el complemento ESLint
 
 
-Para activar la opción de fix onsave https://www.digitalocean.com/community/tutorials/workflow-auto-eslinting#:~:text=If%20you%20have%20the%20ESLint,fixable%20Problems%E2%80%9D%20and%20press%20enter.&text=Beautiful!
+Para activar la opción de fix onsave seguir el siguiente [enlace](https://www.digitalocean.com/community/tutorials/workflow-auto-eslinting#:~:text=If%20you%20have%20the%20ESLint,fixable%20Problems%E2%80%9D%20and%20press%20enter.&text=Beautiful!)
+
+Crea una nueva carpeta .vscode y dentro e archivo setting.json con la configuracion. Solo se aplica para el workspace
+
+```json
+{    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+      },
+      "eslint.validate": ["javascript"]
+}
+```
+
+## Crear estructura de directorios
+- pages
+- components
+- services
+
