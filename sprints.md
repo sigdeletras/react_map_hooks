@@ -69,3 +69,8 @@ const APIURL = 'http://www.cartociudad.es/CartoGeocoder/Geocode?address=calle%20
   //       console.log(response);
   //     });
   // });
+
+
+# Grid de resutados
+
+https://medium.com/samsung-internet-dev/common-responsive-layouts-with-css-grid-and-some-without-245a862f48df
