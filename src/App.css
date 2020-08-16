@@ -1,3 +1,7 @@
+:root {
+  --main-bg-color: brown;
+}
+
 .App {
   text-align: center;
 }
@@ -24,9 +28,6 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +36,47 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+* {box-sizing: border-box;}
+  img {max-width: 100%; display: block;}
+
+  body {
+      font: 1.2em Helvetica, arial, sans-serif;
+  }
+
+  a:link, a:visited {
+    text-decoration: none;
+    color: var(--main-bg-color);
+  }
+  
+  p.address {
+    background-color: var(--main-bg-color);
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
+
+.listing {
+  list-style: none;
+  margin: 2em;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+}
+.listing li {
+  border: 1px solid var(--main-bg-color);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.listing .cta {
+  margin-top: auto;
+  border-top: 1px solid var(--main-bg-color);
+  padding: 10px;
+  text-align: center;
+}
+.listing .body {
+  padding: 10px;
 }

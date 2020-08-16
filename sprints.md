@@ -1,3 +1,18 @@
+# Objetivo
+
+Crear una aplicación que use los servicios API REST de Cartociudad para
+- Buscar una dirección y representarla en un mapa
+- Buscar por coordenadas y presentarla en un mapa
+- Hacer click en un mapa y obtener la dirección
+- Calcular las distancias de dos puntos y pintarla en un mapa
+
+https://www.cartociudad.es/portal/web/guest/calculos
+
+- Usar React y en concreto Hooks
+- CSS
+- Realizar test
+- Openlayers
+
 # Sprint 1
 
 - Crear repositorio en Github y clonar
