@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react';
 import getGeocoders from './services/getCartociudadCandidates';
 import './App.css';
 
+import ListOfSingleGeocode from './components/ListOfSingleGeocode';
+
 function App() {
   const [geocoders, setGeocoders] = useState([]);
 
@@ -15,20 +17,8 @@ function App() {
     <div className="App">
       <p>Hola</p>
       <ul className="listing">
-        {
-      geocoders.map((singleGeocode) => (
-        <li key={singleGeocode.id}>
-          <p className="address">{singleGeocode.address}</p>
-          <div className="body">
-            <p> {singleGeocode.stateMsg} </p>
-            <p> {singleGeocode.type} </p>
-            <p> {singleGeocode.type} </p>
-          </div>
-          <div className="cta"><a href="/">Mapa</a></div>
-        </li>
+        <ListOfSingleGeocode geocoders={geocoders} />
 
-      ))
-    }
       </ul>
 
     </div>
