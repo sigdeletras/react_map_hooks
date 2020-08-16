@@ -1,9 +1,10 @@
 # Objetivo
 
-Crear una aplicación que use los servicios API REST de Cartociudad para
-- Buscar una dirección y representarla en un mapa
-- Buscar por coordenadas y presentarla en un mapa
-- Hacer click en un mapa y obtener la dirección
+Crear una aplicación web que use los servicios API REST de Cartociudad para
+- Buscar una dirección y muestre kis resultados
+- Ver una dirección en un mapa
+- Buscar por coordenadas y presentarla en un mapa.
+- Hacer click en un mapa y obtener la dirección.
 - Calcular las distancias de dos puntos y pintarla en un mapa
 
 https://www.cartociudad.es/portal/web/guest/calculos
@@ -12,6 +13,10 @@ https://www.cartociudad.es/portal/web/guest/calculos
 - CSS
 - Realizar test
 - Openlayers
+
+Para la part de React y Hooks he seguido los interesantes videotutoriales de Miguel Ángel Durán [@midudev](https://twitter.com/midudev) en concreto el [curso de ReactJS2020](https://midu.dev/curso-gratis-react-2020/)
+
+📹 Vídeos ▸ http://youtube.com/c/midudev
 
 # Sprint 1
 
@@ -71,21 +76,34 @@ Crea una nueva carpeta .vscode y dentro e archivo setting.json con la configurac
 - components
 - services
 
+## Creamos componente
+
+- SingleGeocoders
+- ListofGeocoders
+
+Usamos ustesate y useEfect
+
+
+En primer lugar para que no haya loop infnit se usan []
+
+Luego está asociado a un botón con un useStae de dirección.
+
+
+
+
+
 ## service
 
-const APIURL = 'http://www.cartociudad.es/CartoGeocoder/Geocode?address=calle%20pons%201%20barcelona%20barcelona&max_results=50';
+o archivo para obtener los datos de la api
 
-  // const [geocoders, getGeocoders] = useState([]);
-
-  // useEffect(() => {
-  //   fetch(APIURL)
-  //     .then((res) => res.json)
-  //     .then((response) => {
-  //       console.log(response);
-  //     });
-  // });
+Estára en una capa de servicios
 
 
+Documentación de referencia de la api nos dice los siguiente
+
+usamo sla librería fetch.jsonp ya que es el formato que nos devuelve los datos la aplicación
+
+Por reglea general devolvería un json, pero en escat ocasión en un jsonp ...qué es un jsonp superar temas de CORS
 # Grid de resutados
 
 https://medium.com/samsung-internet-dev/common-responsive-layouts-with-css-grid-and-some-without-245a862f48df
