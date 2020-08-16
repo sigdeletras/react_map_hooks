@@ -8,7 +8,7 @@ export default function ListOfSingleGeocode({ direccion }) {
   useEffect(() => {
     getGeocoders({ direccion })
       .then((geocoders) => setGeocoders(geocoders));
-  }, []);
+  }, [direccion]);
 
   return (
 

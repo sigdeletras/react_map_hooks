@@ -1,19 +1,21 @@
 /* eslint-disable react/jsx-one-expression-per-line */
-import React from 'react';
+import React, { useState } from 'react';
 
 import './App.css';
 
 import ListOfSingleGeocode from './components/ListOfSingleGeocode';
 
 function App() {
+  const [direccion, setDireccion] = useState('Avenida de Carlos II 2 Córdoba');
+
   return (
     <div className="App">
-      <p>Hola</p>
+      <button type="button" onClick={() => setDireccion('Plaza de la Corredera Córdoba')}>
+        Cambiar direccion
+      </button>
       <ul className="listing">
-        <ListOfSingleGeocode direccion="Plaza de la Corredera" />
-
+        <ListOfSingleGeocode direccion={direccion} />
       </ul>
-
     </div>
 
   );
